@@ -174,13 +174,34 @@ https://engineeringxpert.com/wp-content/uploads/2022/04/26.png
 
 ## STM 32 CUBE PROGRAM :
 
+```
+MX_GPIO_Init();
 
+Lcd_PortType ports[] = {GPIOA,GPIOA, GPIOA, GPIOA};
+
+Lcd_PinType pins[] = {GPIO_PIN_3,GPIO_PIN_2, GPIO_PIN_1,GPIO_PIN_0};
+
+Lcd_HandleTypeDef lcd;
+
+lcd = Lcd_create(ports, pins, GPIOB,GPIO_PIN_0, GPIOB,GPIO_PIN_1,LCD_4_BIT_MODE);
+
+Lcd_cursor(&lcd, 0,0);
+Lcd_string(&lcd, "DEPT AI&DS");
+Lcd_cursor(&lcd, 1,0);
+Lcd_string(&lcd, "SHADHANASHREE");
+```
 
 
 ## Output screen shots of proteus  :
+
+![Screenshot 2024-09-19 092842](https://github.com/user-attachments/assets/9d01aac9-8512-472b-90e0-6f345675fb34)
+
  
  
  ## CIRCUIT DIAGRAM (EXPORT THE GRAPHICS TO PDF AND ADD THE SCREEN SHOT HERE): 
+
+ ![Screenshot 2024-09-19 093628](https://github.com/user-attachments/assets/97dc22ee-44a7-446b-8d46-45ab8adc00e4)
+
  
  
 ## Result :
